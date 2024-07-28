@@ -1,20 +1,27 @@
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Home from './Pages/Home';
+import Chatbot from './Pages/Chatbot';
+import Analyser from './Pages/Analyser';
+import RootLayout from './Pages/RootLayout';
+const router = createBrowserRouter([
+  {
+  
+    path: '/',
+    element: <RootLayout/>,
+    children: [
+      { index: true, element: <Home /> },
+      { path: 'chatbot', element: <Chatbot /> },
+      { path: 'chatbot/:id', element: <Chatbot /> },
+  { path: 'analyser', element: <Analyser /> },
+    ],
 
-import Card from './Components/Card/Card.jsx'
-import Footer from './Components/Footer/Footer.jsx'
-import Header from './Components/Header/Header'
-import MainCarousel from './Components/MainCarousel/MainCarousel.jsx'
+  },
+]);
 
 function App() {
-  
-
   return (
-    <>
-     <Header/>
-     <MainCarousel/>
-     <Card/>
-     <Footer/>
-    </>
-  )
+    <RouterProvider router={router} />
+  );
 }
 
-export default App
+export default App;
