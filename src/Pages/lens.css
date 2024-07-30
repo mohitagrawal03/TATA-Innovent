@@ -1,0 +1,45 @@
+.d-main
+{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  height: 400px;
+   background-color: #686868;
+  /* background-color: #686868; */
+}
+
+.drop {
+  display: flex;
+  flex-direction: row-reverse;
+  
+  padding: 20px;
+  /* margin-left: 40px; */
+  
+  /* max-height: 200px; */
+  height: 300px;
+   
+}
+
+.image-upload {
+  background-color: #f0f0f0; /* Set your desired background color */
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 500px;
+  
+}
+
+.drop-text {
+  margin-top: 10px;
+}
+img{
+  object-fit: cover;
+  width: 700px;
+  height: 700px;
+  padding-bottom: 50px;
+
+}
