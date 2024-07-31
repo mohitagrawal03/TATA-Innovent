@@ -33,7 +33,7 @@ const ChatComponent = () => {
         console.log("Sending request to API with prompt:", input);
         // Replace 'YourCarName' with the actual car name or parameter you need to pass
         const response = await axios.get(
-          "https://95f8-34-141-251-127.ngrok-free.app/generate",
+          "https://6cc2-34-125-149-39.ngrok-free.app/generate",
 
           {
             params: { prompt: input, car: carName },
